@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2eae2;
+  font-family: "Montserrat", sans-serif;
+}
+.component {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 343px;
+  height: 611px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImage {
+  height: 240px;
+  background: url("../public/image-product-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+}
+
+.text-component {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.item,
+.title,
+.description,
+.currentPrice,
+.originalPrice {
+  margin: 0;
+}
+
+.item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: #6c7289;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1c232b;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #6c7289;
+  margin-bottom: 24px;
+}
+
+.price-component {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.currentPrice {
+  font-family: "Fraunces", serif;
+  margin-right: 19px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3d8168;
+}
+
+.originalPrice {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: #6c7289;
+}
+
+.cartBtn {
+  background: #3d8168;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  width: 295px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11.61px;
+  border: none;
+}
+
+@media (min-width: 640px) {
+  .component {
+    flex-direction: row;
+    width: 600px;
+    height: 450px;
+  }
+
+  .productImage {
+    width: 300px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .text-component {
+    width: 300px;
+    padding: 32px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .description {
+    margin-bottom: 29px;
+  }
+
+  .price-component {
+    margin-bottom: 30px;
+  }
+
+  .cartBtn {
+    width: 100%;
+  }
+}
